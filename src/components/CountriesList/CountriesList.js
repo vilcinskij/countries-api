@@ -24,6 +24,7 @@ const CountriesList = () => {
       LABAS
       {console.dir(country)}
       </div>
+      countries
   )
 }
 
