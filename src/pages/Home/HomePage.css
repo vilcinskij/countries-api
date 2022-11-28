@@ -1,0 +1,44 @@
+.login-form {
+  font-size: 14px;
+  margin: 200px auto;
+  width: 400px;
+  border: 3px solid rgb(168, 182, 185);
+  background-color: rgba(255, 255, 255, 0.7176470588);
+  border-radius: 10px;
+  padding: 20px;
+}
+.login-form .form-element {
+  margin: 10px 0;
+}
+.login-form .form-element .label {
+  font-weight: bold;
+  color: #666;
+}
+.login-form .form-element .check-box-label {
+  font-size: 13px;
+  margin-left: 3px;
+}
+.login-form .form-element .text-label {
+  display: block;
+  margin-bottom: 3px;
+}
+.login-form .form-element .text-input {
+  width: 97%;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #444;
+  border: 1px solid #bbb;
+}
+.login-form .form-element .button {
+  background-color: rgb(168, 182, 185);
+  color: white;
+  padding: 2px 12px;
+  margin: 20px 0 0 0;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+}
+.login-form .form-element .login-button {
+  width: 100%;
+}/*# sourceMappingURL=HomePage.css.map */

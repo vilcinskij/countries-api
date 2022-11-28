@@ -1,15 +1,19 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Navigation from './components/Navigation/Navigation';
+import './App.css';
+import Header from './components/Header/Header';
+import CountriesPage from './pages/Countries/CountriesPage';
+import CountryPage from './pages/Country/CountryPage';
 import HomePage from './pages/Home/HomePage';
 
 function App() {
   return (
     <>
-      <Navigation />
+      <Header />
       <Routes>
-        <Route path="/home" element={<HomePage />}></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/countries" element={<CountriesPage />}></Route>
+        <Route path="/countries/:countryCode" element={<CountryPage />}></Route>
       </Routes>
     </>
   );

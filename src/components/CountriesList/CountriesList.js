@@ -1,5 +1,6 @@
 import './CountriesList.css'
 import React, { useEffect, useState } from 'react'
+import CountryCard from '../CountryCard/CountryCard'
 
 const CountriesList = () => {
 
@@ -17,9 +18,11 @@ const CountriesList = () => {
   return (
     <div className='countries-list'>
       {countries && (
-        <ul>
-          {countries.map((country, index) => <div className='card country-card' key={index}>{country.name.common}</div>)}
-        </ul>
+        <>
+          {countries.map((country, index) =>
+            <CountryCard key={index} data={country} />
+          )}
+        </>
       )}
     </div>
   )
