@@ -6,7 +6,6 @@ const HomePage = () => {
   return (
     <div>
       <MaxWidth>
-
         <CountriesList></CountriesList>
       </MaxWidth>
     </div>

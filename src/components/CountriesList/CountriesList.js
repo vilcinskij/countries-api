@@ -3,28 +3,25 @@ import React, { useEffect, useState } from 'react'
 
 const CountriesList = () => {
 
-  const [country, setCountry] = useState([])
+  const [countries, setCountries] = useState([])
 
   useEffect(() => {
-
     fetch('https://restcountries.com/v3.1/all')
       .then(res => res.json())
-      .then(countries => {
-        countries.map(country => {
-          // console.log(country);
-          setCountry(prevState => [...prevState, country])
-         })
+      .then(countriesData => {
+        setCountries(countriesData)
       })
-  }, []
-  )
+  }, [])
+
 
   return (
     <div className='countries-list'>
-      {/* {country.name.common} */}
-      LABAS
-      {console.dir(country)}
-      </div>
-      countries
+      {countries && (
+        <ul>
+          {countries.map((country, index) => <div className='card country-card' key={index}>{country.name.common}</div>)}
+        </ul>
+      )}
+    </div>
   )
 }
 

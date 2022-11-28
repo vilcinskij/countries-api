@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <div className='navigation'>
       <MaxWidth>
-        <Link to="./home">Home</Link>
+        <Link to="/home">Home</Link>
       </MaxWidth>
     </div>
   )
