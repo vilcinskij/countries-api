@@ -1,3 +1,19 @@
 .navigation {
-    margin: 50px;
+    margin: 0 50px;
+
+    .main-menu {
+        display: flex;
+        justify-content: space-around;
+
+        .menu-item {
+            
+            a {
+                display: block;
+                font-size: 32px;
+                text-transform: uppercase;
+                font-weight: bolder;
+                color: white;
+            }
+        }
+    }
 }
