@@ -18,14 +18,17 @@ const CountryPage = () => {
 
     return (
         <MaxWidth>
-            {!country
-                ? <h1>Loading......</h1>
-                : <div>
-                    <img src={country[0].flags.png}/>
-                    <h3>{country[0].name.common}</h3>
-                    
-                </div>
-            }
+            <div className='country-wrapper'>
+
+                {!country
+                    ? <h1>Loading......</h1>
+                    : <div>
+                        <img src={country[0].flags.png} alt={`${country[0].name.common} flag`} />
+                        <h3>{country[0].name.common}</h3>
+
+                    </div>
+                }
+            </div>
         </MaxWidth>
     )
 }
