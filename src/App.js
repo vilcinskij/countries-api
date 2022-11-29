@@ -11,9 +11,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/countries" element={<CountriesPage />}></Route>
-        <Route path="/countries/:countryCode" element={<CountryPage />}></Route>
+        <Route path="./" element={<HomePage />}></Route>
+        <Route path="./countries" element={<CountriesPage />}></Route>
+        <Route path="./countries/:countryCode" element={<CountryPage />}></Route>
       </Routes>
     </>
   );
