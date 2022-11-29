@@ -1,6 +1,7 @@
 import './HomePage.scss';
 import React, { useState } from 'react';
 import SearchResult from '../SearchResult/SearchResult';
+import SearchForm from '../../components/SearchForm/SearchForm';
 
 const HomePage = () => {
   const [country, setCountry] = useState('');
@@ -14,8 +15,8 @@ const HomePage = () => {
 
   return (
     <div>
-
-      <form id="login-form" className="login-form" onSubmit={submitHandler}>
+      <SearchForm />
+      {/* <form id="login-form" className="login-form" onSubmit={submitHandler}>
         <div className="form-element">
           <label htmlFor="user-name" className="label text-label">Find a country:</label>
           <input
@@ -38,7 +39,7 @@ const HomePage = () => {
       </form>
       {country &&
         <SearchResult result={country} />
-      }
+      } */}
     </div>
   )
 }
