@@ -1,5 +1,6 @@
 import './HomePage.scss';
 import React, { useState } from 'react';
+import SearchResult from '../SearchResult/SearchResult';
 
 const HomePage = () => {
   const [country, setCountry] = useState('');
@@ -35,6 +36,9 @@ const HomePage = () => {
           />
         </div>
       </form>
+      {country &&
+        <SearchResult result={country} />
+      }
     </div>
   )
 }
