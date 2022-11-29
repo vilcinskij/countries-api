@@ -10,13 +10,13 @@ const CountryCard = ({ data: { name, flags, population, capital, continents, cca
           <h5 className="card-title">{name.common}</h5>
           <ul>
             <li>
-              <h8><span className='cardContentTitle'>Capital: </span>{capital}</h8>
+              <h6><span className='cardContentTitle'>Capital: </span>{capital}</h6>
             </li>
             <li>
-              <h8><span className='cardContentTitle'>Continent: </span>{continents}</h8>
+              <h6><span className='cardContentTitle'>Continent: </span>{continents}</h6>
             </li>
             <li>
-              <h8><span className='cardContentTitle'>Population: </span>{population}</h8>
+              <h6><span className='cardContentTitle'>Population: </span>{population}</h6>
             </li>
           </ul>
         </div>
