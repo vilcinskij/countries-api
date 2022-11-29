@@ -1,4 +1,4 @@
-import './CountryPage.css';
+import './CountryPage.scss';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import MaxWidth from '../../components/UI/MaxWidth/MaxWidth';

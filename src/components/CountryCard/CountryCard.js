@@ -1,4 +1,4 @@
-import './CountryCard.css'
+import styles from './CountryCard.scss'
 import React from 'react'
 
 const CountryCard = ({ data: { name, flags, population, capital, continents, cca2 } }) => {
@@ -8,9 +8,17 @@ const CountryCard = ({ data: { name, flags, population, capital, continents, cca
         <img src={flags.png} className="card-img-top" alt={`${name.common} flag`} />
         <div className="card-body">
           <h5 className="card-title">{name.common}</h5>
-          <h6>Capital: {capital}</h6>
-          <h6>Continent: {continents}</h6>
-          <h6>Population: {population}</h6>
+          <ul>
+            <li>
+              <h8><span className='cardContentTitle'>Capital: </span>{capital}</h8>
+            </li>
+            <li>
+              <h8><span className='cardContentTitle'>Continent: </span>{continents}</h8>
+            </li>
+            <li>
+              <h8><span className='cardContentTitle'>Population: </span>{population}</h8>
+            </li>
+          </ul>
         </div>
       </div>
     </a>

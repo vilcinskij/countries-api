@@ -1,8 +1,10 @@
-.countries-list {
-    margin: 50px
-}
-
 .country-card {
-    width: 200px;
+    width: 230px;
     margin-bottom: 20px;
+    ul {
+        padding: 0;
+        .cardContentTitle {
+            font-weight: bold;
+        }
+    }
 }

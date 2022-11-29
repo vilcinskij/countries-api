@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 import React from 'react';
 import MaxWidth from '../UI/MaxWidth/MaxWidth';
 import Navigation from '../Navigation/Navigation';

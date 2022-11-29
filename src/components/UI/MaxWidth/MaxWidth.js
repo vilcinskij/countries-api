@@ -1,4 +1,4 @@
-import './MaxWidth.css'
+import './MaxWidth.scss'
 import React from 'react'
 
 const MaxWidth = (props) => {

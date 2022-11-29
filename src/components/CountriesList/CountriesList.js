@@ -1,4 +1,4 @@
-import './CountriesList.css'
+import './CountriesList.scss'
 import React, { useEffect, useState } from 'react'
 import CountryCard from '../CountryCard/CountryCard'
 
