@@ -1,6 +1,4 @@
-# Getting Started with Create React 
-
-
+# Getting Started with Create React
 
 
 ## Available Scripts
